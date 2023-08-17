@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <script src="build/js/app.js"></script>
+    <link rel="shortcut icon" href="<?= asset('images/cit.png') ?>" type="image/x-icon">
+    <link rel="stylesheet" href="<?= asset('build/styles.css') ?>">
+    <title>Menú</title>
 </head>
-<body>
-    <h1 class="text-center">BIENVENIDO</h1>
-    <div class="row justify-content-center mb-5">
-        <form class="col-lg-8 border bg-light p-3" id="formularioMenu">
-                <div class="col">
-                    <button type="button" id="btnVolver" class="btn btn-warning w-100">Volver</button>
-                </div>
-        </form>
+<body class="bg-image bg-opacity-50">
+    <div class="bg-light bg-opacity-10 w-100" style="height: 100vh;">
+        <div class="container-fluid pt-5 mb-4">
+            <h2 class="text-center mb-4 text-primary">Menú</h2>
+            
+            <div class="d-grid">
+                <a href="/login" class="btn btn-primary">Cerrar Sesión</a>
+            </div>
+        </div>
     </div>
-    <script src="<?= asset('./build/js/menu/index.js')  ?>"></script>
 </body>
 </html>
+
