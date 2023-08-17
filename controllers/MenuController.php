@@ -10,7 +10,4 @@ class MenuController {
         $router->render('menu/index', []);
     }
 
-    // Agrega aquí más métodos para manejar funcionalidad específica de la página de menú si es necesario
-
 }
-

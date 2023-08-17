@@ -2,6 +2,7 @@
 
 namespace MVC;
 
+
 class Router
 {
     public $getRoutes = [];
@@ -80,3 +81,4 @@ class Router
         return $contenido;
     }
 }
+
