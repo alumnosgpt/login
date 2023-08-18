@@ -1,10 +1,38 @@
+const botoncerrar = document.getElementById('cerrarsesion')
 
-document.addEventListener('DOMContentLoaded', () => {
-    const backButton = document.getElementById('back-button');
+const cerrarsesion = async () => {
 
-    if (backButton) {
-        backButton.addEventListener('click', () => {
-            window.location.href = '/login'; // Redirigir de vuelta a la página de inicio de sesión
-        });
+   
+    const url = `/login/cerrarsesion`;
+    const config = {
+        method: 'GET'
+    };
+
+    try {
+        const respuesta = await fetch(url, config);
+        const data = await respuesta.json();
+        
+   
+        if(data == true){
+
+            window.location.href= '/login/'
+        }
+
+
+     
+
+        
+
+        
+    } catch (error) {
+        console.log(error);
     }
-});
+};
+
+
+
+
+
+
+
+botoncerrar.addEventListener('click', cerrarsesion)

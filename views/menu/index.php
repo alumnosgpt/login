@@ -1,3 +1,4 @@
+<?php if(isset($_SESSION['auth_user'])){?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +15,20 @@
             <h2 class="text-center mb-4 text-primary">Menú</h2>
             
             <div class="d-grid">
-                <a href="/login" class="btn btn-primary">Cerrar Sesión</a>
+                <button  class="btn btn-primary"  id="cerrarsesion">Cerrar Sesión</button>
             </div>
         </div>
     </div>
 </body>
 </html>
 
+<?php }
+
+else{
+
+    header("Location: /login/");
+}
+
+?>
+
+<script src="<?= asset('./build/js/menu/index.js') ?>"></script>
